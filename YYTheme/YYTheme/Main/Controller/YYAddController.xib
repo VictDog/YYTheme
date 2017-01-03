@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YYAddController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIp-9X-fgp">
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="1f0-ea-W5Q"/>
+                        <constraint firstAttribute="height" constant="30" id="ikF-Xc-Pe5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="关闭"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="UYx-TF-MNL"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEF-Md-nrP">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="baa-2B-6sR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3a4-cq-Y4h">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xrR-so-maA"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入标题" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cp9-di-qjk">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="PtW-Bm-yN1"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpF-6K-Pli">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="3x4-ns-XeU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="发布">
+                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="publish:" destination="-1" eventType="touchUpInside" id="o2z-Kw-OaG"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="请输入正文" translatesAutoresizingMaskIntoConstraints="NO" id="GUL-Z3-sKw">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SpF-6K-Pli" secondAttribute="trailing" constant="20" id="3fU-X0-d0m"/>
+                <constraint firstAttribute="trailing" secondItem="3a4-cq-Y4h" secondAttribute="trailing" id="5Vt-ot-IxC"/>
+                <constraint firstItem="bEF-Md-nrP" firstAttribute="top" secondItem="bIp-9X-fgp" secondAttribute="bottom" constant="10" id="97z-T5-Nsm"/>
+                <constraint firstItem="Cp9-di-qjk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="AiF-sk-EF5"/>
+                <constraint firstItem="3a4-cq-Y4h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bbl-9R-TNW"/>
+                <constraint firstAttribute="bottom" secondItem="GUL-Z3-sKw" secondAttribute="bottom" constant="40" id="GTT-90-3Lr"/>
+                <constraint firstItem="SpF-6K-Pli" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="MVi-v4-r0s"/>
+                <constraint firstItem="bIp-9X-fgp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="NfA-1d-Hx9"/>
+                <constraint firstItem="bEF-Md-nrP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NqF-FM-NmW"/>
+                <constraint firstItem="bIp-9X-fgp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="OdT-nT-3RE"/>
+                <constraint firstAttribute="trailing" secondItem="bEF-Md-nrP" secondAttribute="trailing" id="RCg-15-gjE"/>
+                <constraint firstAttribute="trailing" secondItem="GUL-Z3-sKw" secondAttribute="trailing" constant="20" id="X62-4V-KPy"/>
+                <constraint firstItem="GUL-Z3-sKw" firstAttribute="top" secondItem="3a4-cq-Y4h" secondAttribute="bottom" constant="20" id="YJh-bY-zXY"/>
+                <constraint firstAttribute="trailing" secondItem="Cp9-di-qjk" secondAttribute="trailing" constant="20" id="fuL-7X-SAH"/>
+                <constraint firstItem="3a4-cq-Y4h" firstAttribute="top" secondItem="Cp9-di-qjk" secondAttribute="bottom" constant="10" id="kQe-Y4-Ekx"/>
+                <constraint firstItem="GUL-Z3-sKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="x7Z-aV-dw8"/>
+                <constraint firstItem="Cp9-di-qjk" firstAttribute="top" secondItem="bEF-Md-nrP" secondAttribute="bottom" constant="15" id="zbA-3L-MYt"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
