@@ -48,12 +48,12 @@
     
     childController.title = title;
     // 设置字体颜色
-    NSMutableDictionary * normalAttrs = [NSMutableDictionary dictionary];
-    normalAttrs[NSForegroundColorAttributeName] = [UIColor darkTextColor];
-    [childController.tabBarItem setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
-    NSMutableDictionary * selectedAtrrs = [NSMutableDictionary dictionary];
-    selectedAtrrs[NSForegroundColorAttributeName] = YYTHEME_THEME_COLOR;
-    [childController.tabBarItem yy_addToThemeColorPoolWithSelector:@selector(setTitleTextAttributes:forState:) objects:@[selectedAtrrs, @(UIControlStateSelected)]];
+//    NSMutableDictionary * normalAttrs = [NSMutableDictionary dictionary];
+//    normalAttrs[NSForegroundColorAttributeName] = [UIColor darkTextColor];
+//    [childController.tabBarItem setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+//    NSMutableDictionary * selectedAtrrs = [NSMutableDictionary dictionary];
+//    selectedAtrrs[NSForegroundColorAttributeName] = YYTHEME_THEME_COLOR;
+//    [childController.tabBarItem yy_addToThemeColorPoolWithSelector:@selector(setTitleTextAttributes:forState:) objects:@[selectedAtrrs, @(UIControlStateSelected)]];
     // 设置图片
     [childController.tabBarItem setImage:[[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [childController.tabBarItem setSelectedImage:[[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];

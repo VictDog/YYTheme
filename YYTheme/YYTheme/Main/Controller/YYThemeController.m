@@ -68,7 +68,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // 取出选中cell，设置主题颜色
     UICollectionViewCell *selectedCell = [collectionView cellForItemAtIndexPath:indexPath];
-    NSLog(@"color%@", selectedCell.backgroundColor);
+//    NSLog(@"color%@", selectedCell.backgroundColor);
     [self yy_setThemeColor:selectedCell.backgroundColor];
 }
 
